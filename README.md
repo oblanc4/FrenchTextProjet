@@ -14,7 +14,7 @@ We have embarked on the development of models aimed at predicting the difficulty
 ## Results
 The performance metrics below were calculated using a train-test split to evaluate the models. For the SVM model, the reported accuracy was obtained by applying the fine-tuned model to a new, unlabeled dataset.
 
-| Metric       | Logistic Regression | kNN    | Decision Tree | Random Forests | SVM Fine-Tuning + Features |
+| Metric       | Logistic Regression | kNN    | Decision Tree | Random Forests | SVM Fine-Tuning+Features |
 |--------------|---------------------|--------|---------------|----------------|-----------------|
 | Precision    | 0.474               | 0.348  | 0.324         | 0.410          | -               |
 | Recall       | 0.475               | 0.232  | 0.326         | 0.416          | -               |
@@ -46,7 +46,14 @@ This project explores various embedding methods to enhance its model's performan
 
 
 ## Post Training
-Explain any processes or analysis conducted after training the model.
+After the initial training phase, we conducted a series of fine-tuning and evaluation processes to optimize our models further. The following notebooks and files are involved in this post-training phase:
+
+- `SVM Fine-Tuning+feature.ipynb`: This notebook contains our best-performing model with fine-tuning applied, alongside additional feature integration.
+- `SVM-Fine-Tuning.ipynb`: This notebook details the fine-tuning process for the SVM model without additional features.
+- `model_only.pth`: The PyTorch model file that contains the trained model weights. You can download this file from [this link](https://www.swisstransfer.com/d/9ae9ec06-7742-4cb3-9f2d-005a7f800af6) (This link expires on 18.01.2024 at 22:07).
+
+These materials provide an in-depth look at the refinement steps taken to enhance model performance and achieve the reported results.
+
 
 ## Streamlit
 To use the Streamlit application:
@@ -58,7 +65,7 @@ To use the Streamlit application:
 3. To run the application, open a terminal and execute: streamlit run [relative/path/to/Myapp.py]. Make sure to replace `[relative/path/to/Myapp.py]` with the actual relative path to `Myapp.py`.
 
 ## Demonstration Video
-Watch the following video for a detailed explanation of the most effective model, SVM Fine-Tuning, and to see the Streamlit application in action:
+Watch the following video for a detailed explanation of the most effective model, SVM Fine-Tuning+Features, and to see the Streamlit application in action:
 
 [![SVM Fine-Tuning and Streamlit Application](http://img.youtube.com/vi/INsprDhmOUA/0.jpg)](https://youtu.be/INsprDhmOUA)
 
