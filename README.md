@@ -10,8 +10,6 @@ We have embarked on the development of models aimed at predicting the difficulty
 - [Streamlit](#streamlit)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Dataset
 This section of the project uses several key data files:
@@ -26,22 +24,29 @@ In this phase, the dataset is enhanced using the `data_upgrade.ipynb` notebook, 
 
 
 ## Embeddings
-Provide information about the embeddings used in this project, their purpose, and how they were created.
+This project explores various embedding methods to enhance its model's performance. The following notebooks document the tests conducted with different embedding techniques:
+- `CamemBERT+Features.ipynb`: Testing embedding with CamemBERT, combined with additional features.
+- `FlauBERT+Features.ipynb`: Experimentation with FlauBERT embeddings and additional feature integration.
+- `NeuralNetworks.ipynb`: Trials with embedding techniques using neural networks.
+- `RoBERTa+Features.ipynb`: Investigating the use of RoBERTa embeddings alongside additional features.
+- `Sentence-CamemBERT-Large+Features.ipynb`: Exploring larger CamemBERT models at the sentence level with feature enhancement.
+
 
 ## Post Training
 Explain any processes or analysis conducted after training the model.
 
 ## Streamlit
-Describe how Streamlit is implemented in the project, including instructions for running the Streamlit application.
+To use the Streamlit application:
+1. Download the `modele_camembert` folder from [this link](https://www.swisstransfer.com/d/31832bd3-57c7-4c0e-a43b-5bccc74879a5) and add it to the `streamlit` directory in your project (This link expires on 18.01.2024 at 19:56).
+2. Modify the file paths in `Myapp.py` to use relative paths:
+    - Tokenizer path: `./streamlit/tokenizer`
+    - Model path: `./streamlit/modele_camembert`
+    - SVM model path: `./streamlit/svm_model.pkl`
+3. To run the application, open a terminal and execute: streamlit run [relative/path/to/Myapp.py]. Make sure to replace `[relative/path/to/Myapp.py]` with the actual relative path to `Myapp.py`.
+
 
 ## Installation
 Instructions on installing and setting up your project.
 
 ## Usage
 Guidelines on how to use the project, with examples of commands or scripts.
-
-## Contributing
-Information for those who wish to contribute to the project.
-
-## License
-The license under which this project is released.
