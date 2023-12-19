@@ -70,9 +70,3 @@ Watch the following video for a detailed explanation of the most effective model
 [![SVM Fine-Tuning and Streamlit Application](http://img.youtube.com/vi/INsprDhmOUA/0.jpg)](https://youtu.be/INsprDhmOUA)
 
 Click the image above to play the video.
-
-## Installation
-Instructions on installing and setting up your project.
-
-## Usage
-Guidelines on how to use the project, with examples of commands or scripts.
