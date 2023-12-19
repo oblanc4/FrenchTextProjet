@@ -3,25 +3,38 @@
 We have embarked on the development of models aimed at predicting the difficulty level of a written text in French for English speakers. These models are designed to assess the level of linguistic proficiency required to comprehend and engage with the text, using a scale ranging from A1 to C2. This initiative aligns with our commitment to facilitate the learning of French for English speakers by providing automated assessment of text difficulty levels, thereby contributing to personalized learning experiences and making language acquisition more accessible and effective.
 
 ## Table of Contents
-- [Dataset](#dataset)
-- [Dataset Upgrade](#dataset-upgrade)
+- [Results](#results)
+- [Dataset and Dataset Upgrade](#dataset-and-dataset-upgrade)
 - [Embeddings](#embeddings)
 - [Post Training](#post-training)
 - [Streamlit](#streamlit)
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Dataset
-This section of the project uses several key data files:
+## Results
+The performance metrics below were calculated using a train-test split to evaluate the models. For the SVM model, the reported accuracy was obtained by applying the fine-tuned model to a new, unlabeled dataset.
+
+| Metric       | Logistic Regression | kNN    | Decision Tree | Random Forests | SVM Fine-Tuning |
+|--------------|---------------------|--------|---------------|----------------|-----------------|
+| Precision    | 0.474               | 0.348  | 0.324         | 0.410          | -               |
+| Recall       | 0.475               | 0.232  | 0.326         | 0.416          | -               |
+| F1-score     | 0.469               | 0.181  | 0.315         | 0.390          | -               |
+| Accuracy     | 0.475               | 0.232  | 0.326         | 0.416          | 0.607           |
+
+- Note: The SVM model underwent a fine-tuning process, significantly improving its metrics, with an overall accuracy of 0.914 on a new dataset.
+
+## Dataset and Dataset Upgrade
+In this project, we utilize a variety of data files to train and test our models. The process involves both initial dataset preparation and subsequent upgrades to enhance the data quality and relevance.
+
+### Original Dataset
 - `training_data.csv`: The training set, containing labeled data for model training.
 - `unlabelled_test_data.csv`: The test set, used for model evaluation, consisting of unlabelled data.
 
-## Dataset Upgrade
-In this phase, the dataset is enhanced using the `data_upgrade.ipynb` notebook, which adds additional attributes like word count, POS tagging, and complexity to the dataframes. The upgraded datasets include:
-- `training_dataUP.csv`: The original `training_data.csv` enhanced with additional attributes.
-- `unlabelled_test_dataUP.csv`: Similar to `training_dataUP`, this is the upgraded version of `unlabelled_test_data.csv`.
-- `augmented_training_dataUP.csv`: This file takes the original `training_data.csv`, augments it with new sentences, and then enhances it using `data_upgrade.ipynb`.
-
+### Dataset Enhancement
+Using the `data_upgrade.ipynb` notebook, we've augmented the original datasets with additional attributes to improve the model's performance. This includes adding word count, POS tagging, and complexity metrics. The enhanced datasets are:
+- `training_dataUP.csv`: Enhanced version of the original `training_data.csv`.
+- `unlabelled_test_dataUP.csv`: Upgraded version of the `unlabelled_test_data.csv`.
+- `augmented_training_dataUP.csv`: An augmented version of `training_data.csv`, which includes new sentences and is further enhanced using `data_upgrade.ipynb`.
 
 ## Embeddings
 This project explores various embedding methods to enhance its model's performance. The following notebooks document the tests conducted with different embedding techniques:
