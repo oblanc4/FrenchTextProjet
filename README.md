@@ -57,6 +57,12 @@ To use the Streamlit application:
     - SVM model path: `./streamlit/svm_model.pkl`
 3. To run the application, open a terminal and execute: streamlit run [relative/path/to/Myapp.py]. Make sure to replace `[relative/path/to/Myapp.py]` with the actual relative path to `Myapp.py`.
 
+## Demonstration Video
+Watch the following video for a detailed explanation of the most effective model, SVM Fine-Tuning, and to see the Streamlit application in action:
+
+[![SVM Fine-Tuning and Streamlit Application](http://img.youtube.com/vi/INsprDhmOUA/0.jpg)](https://youtu.be/INsprDhmOUA)
+
+Click the image above to play the video.
 
 ## Installation
 Instructions on installing and setting up your project.
