@@ -14,7 +14,7 @@ We have embarked on the development of models aimed at predicting the difficulty
 ## Results
 The performance metrics below were calculated using a train-test split to evaluate the models. For the SVM model, the reported accuracy was obtained by applying the fine-tuned model to a new, unlabeled dataset.
 
-| Metric       | Logistic Regression | kNN    | Decision Tree | Random Forests | SVM Fine-Tuning |
+| Metric       | Logistic Regression | kNN    | Decision Tree | Random Forests | SVM Fine-Tuning + Features |
 |--------------|---------------------|--------|---------------|----------------|-----------------|
 | Precision    | 0.474               | 0.348  | 0.324         | 0.410          | -               |
 | Recall       | 0.475               | 0.232  | 0.326         | 0.416          | -               |
