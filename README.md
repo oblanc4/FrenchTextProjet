@@ -3,7 +3,7 @@
 We have embarked on the development of models aimed at predicting the difficulty level of a written text in French for English speakers. These models are designed to assess the level of linguistic proficiency required to comprehend and engage with the text, using a scale ranging from A1 to C2. This initiative aligns with our commitment to facilitate the learning of French for English speakers by providing automated assessment of text difficulty levels, thereby contributing to personalized learning experiences and making language acquisition more accessible and effective.
 
 ## 📑 Table of Contents
-- [🏆 Results](#results)
+- [🏆 Results](#-results)
 - [📊 Dataset and Dataset Upgrade](#dataset-and-dataset-upgrade)
 - [🧠 Embeddings](#embeddings)
 - [🔍 Post Training](#post-training)
