@@ -4,11 +4,11 @@ We have embarked on the development of models aimed at predicting the difficulty
 
 ## 📑 Table of Contents
 - [🏆 Results](#-results)
-- [📊 Dataset and Dataset Upgrade](#dataset-and-dataset-upgrade)
-- [🧠 Embeddings](#embeddings)
-- [🔍 Post Training](#post-training)
-- [🌐 Streamlit](#streamlit)
-- [🎥 Demonstration Video](#demonstration-video)
+- [📊 Dataset and Dataset Upgrade](#-dataset-and-dataset-upgrade)
+- [🧠 Embeddings](#-embeddings)
+- [🔍 Post Training](#-post-training)
+- [🌐 Streamlit](#-streamlit)
+- [🎥 Demonstration Video](#-demonstration-video)
 
 ## 🏆 Results
 The performance metrics below were calculated using a train-test split to evaluate the models. For the SVM model, the reported accuracy was obtained by applying the fine-tuned model to a new, unlabeled dataset.
