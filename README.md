@@ -20,7 +20,7 @@ The performance metrics below were calculated using a train-test split to evalua
 | F1-score     | 0.469               | 0.181  | 0.315         | 0.390          | -               |
 | Accuracy     | 0.475               | 0.232  | 0.326         | 0.416          | 0.607           |
 
-- Note: The SVM model underwent a fine-tuning process, significantly improving its metrics, with an overall accuracy of 0.914 on a new dataset.
+
 
 ## 📊 Dataset and Dataset Upgrade
 In this project, we utilize a variety of data files to train and test our models. The process involves both initial dataset preparation and subsequent upgrades to enhance the data quality and relevance.
