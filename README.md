@@ -49,14 +49,14 @@ After the initial training phase, we conducted a series of fine-tuning and evalu
 
 - `SVM Fine-Tuning+feature.ipynb`: This notebook contains our best-performing model with fine-tuning applied, alongside additional feature integration.
 - `SVM-Fine-Tuning.ipynb`: This notebook details the fine-tuning process for the SVM model without additional features.
-- `model_only.pth`: The PyTorch model file that contains the trained model weights. You can download this file from [this link](https://www.swisstransfer.com/d/9ae9ec06-7742-4cb3-9f2d-005a7f800af6) (This link expires on 18.01.2024 at 22:07).
+- `model_only.pth`: The PyTorch model file that contains the trained model weights. You can download this file from [this link](https://drive.google.com/file/d/1fBPGKAMIBaB-rSW1e7waPH1w0lPz0AGq/view?usp=share_link).
 
 These materials provide an in-depth look at the refinement steps taken to enhance model performance and achieve the reported results.
 
 
 ## 🌐 Streamlit
 To use the Streamlit application:
-1. Download the `modele_camembert` folder from [this link](https://www.swisstransfer.com/d/31832bd3-57c7-4c0e-a43b-5bccc74879a5) and add it to the `streamlit` directory in your project (This link expires on 18.01.2024 at 19:56).
+1. Download the `modele_camembert` folder from [this link](https://drive.google.com/drive/folders/1401_bc5yY9jJFd_NigQwKKgJx6zO0f1T?usp=share_link) and add it to the `streamlit` directory in your project.
 2. Modify the file paths in `Myapp.py` to use relative paths:
     - Tokenizer path: `./streamlit/tokenizer`
     - Model path: `./streamlit/modele_camembert`
